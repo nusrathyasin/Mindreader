@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!--Bootstrap library -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!--jquery -->
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!--Font style -->
+	   <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+	   <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+	   <title>Mind reader</title>
+ <!--Css -->
+<style>
+body{
+	background:url("112.jpg");
+}
+header h1{
+	text-shadow:2px 2px 2px white;
+	font-size:50px;
+	margin-top:30px;
+	border-bottom:1px solid grey;
+}
+h1{
+	font-family: 'Orbitron', sans-serif;
+	font-size:45px;
+	text-shadow:2px 2px 2px black;
+}
+#content{
+	font-family:Merienda;
+	font-size:27px;
+	margin-left:40px;
+}
+</style>
+</head>
+  <body>
+     <div class="container">
+	 <!-- header starts-->
+	  <header>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-12">
+				<h1 id="name" style="font-family:Vivaldi"><b>NusrathYasin</b></h1>
+			</div>
+		</div>
+	  </header><!-- header ends-->
+	  <!-- Title-->
+	  <h1 class="text-center">MIND READER</h1>
+      <div id="content">
+            <div class="row">
+                <div class="col-md-7">
+                  <h2><b><u>I can Guess What You Think?</u></b></h2>
+                  <p>Think of a number any positive integer.Add it with 17 and double it i.e 2(x+17).Put your answer in input field.</p><br>
+                  <input type="text" id="num" placeholder="Type ur result here"> 
+                  <button onclick="guess()" type="submit">Guess</button><br>
+                  <h3>You think :<p id="demo1"></p></h3>
+                </div>
+               <div class="col-md-5"  style="border-left:1px solid black">
+                  <h5><u>Do you need Calculator?</u></h5>
+   	              <span>
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="350" height="430" id="CalculatorID" title="Embed Calculator">
+					<param name="movie" value="http://www.embedcalculator.com/flash/StandardCalculator.swf" />
+					<param name="quality" value="high" />
+					<param name="wmode" value="opaque" />
+					<param name="swfversion" value="9.0.45.0" />
+					<!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt. -->
+					<param name="expressinstall" value="http://www.embedcalculator.com/Scripts/expressInstall.swf" />
+					<!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+					<!--[if !IE]>-->
+					<object type="application/x-shockwave-flash" data="http://www.embedcalculator.com/flash/StandardCalculator.swf" width="350" height="430">
+					  <!--<![endif]-->
+					<param name="quality" value="high" />
+					<param name="wmode" value="opaque" />
+					<param name="swfversion" value="9.0.45.0" />
+					<param name="expressinstall" value="http://www.embedcalculator.com/Scripts/expressInstall.swf" />
+					  <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+					<div>
+					<h4><a href="http://www.embedcalculator.com">Embed Calculator</a> requires a newer version of Adobe Flash Player.</h4>
+					<p>You must have the current version of the adobe flash player to use this <a href="http://www.embedcalculator.com">online calculator</a>.</p>
+					</div>
+					<!--[if !IE]>-->
+					</object>
+					<!--<![endif]-->
+				    </object>
+					</span>
+			        <script type="text/javascript">
+                    swfobject.registerObject("CalculatorID");
+                    </script>
+                 </div>
+	          </div>
+      </div>
+      <ul class="pager">
+          <li class="previous pull-left"><a href="">Previous</a></li>
+          <li class="Next pull-right"><a href="">Next</a></li>
+      </ul>
+      <p class="text-center">Made with <span class="glyphicon glyphicon-heart"></span> by Nusrath Yasin </p>
+      </div>
+<!--javascript file-->
+<script src="main.js"></script>
+</body>
+</html>
