@@ -1,1 +1,98 @@
-
+<!doctype html>
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!--Bootstrap library -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!--jquery -->
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!--Font style -->
+	    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	    <title>Mind reader</title>
+<!--jquery code -->
+<script> 
+   $(document).ready(function(){
+      $("#start").click(function(){
+         $("#animation").toggle();
+         $("#one").animate({right: '450px'},"slow");
+         $("#two").animate({left: '500px'},"slow");
+	       setTimeout(func, 9000);
+	       setTimeout(funct, 10500);
+      });
+   });
+   function func(){
+        document.getElementById("three").style.visibility = "visible";
+	 }
+   function funct(){
+        document.getElementById("four").style.visibility = "visible";
+   }
+</script> 
+<style>
+ body{
+	background:url("b.jpg");
+	color:white;
+}
+ h1{
+	font-family:Tangerine;
+	font-size:120px;
+	margin-top:80px;
+	margin-left:100px;
+	font-weight:50;
+	text-shadow:2px 2px 2px white;
+}
+ p{
+	font-family:Viner Hand ITC;
+	font-size:18px;
+	font-weight:10;
+}
+ #animation{
+	display:none;
+}
+ a{
+	position:absolute;
+	bottom:40px;
+	right:60px;
+}
+ #one {
+    transition-duration: 7s;
+    transition-delay: 2s;
+	position:absolute;
+	right:0;
+}
+ #two{
+	transition-duration: 5s;
+}
+ #three{
+	visibility:hidden;
+	position:absolute;
+	top:50%;
+	left:490px;
+}
+ #four{
+	visibility:hidden;
+	position:absolute;
+	top:50%;
+	right:480px;
+}
+</style>
+<body>
+<div class="container">
+    <h1>Relax Please....</h1>
+    <center>
+       <button id="start" class="btn btn-lg btn-default">Get Started</button>
+    </center>
+	<div id="animation">
+		<img style="position:absolute;bottom:90px" id="one" src="211.png" width="200" height="200" />
+		<img style="position:absolute;bottom:90px" id="two" src="212.svg" width="200" height="200" />
+	</div>
+	<p id="three">Hai,Can We play? <br> Can I Guess <br>What you <br>think?</p>
+	<p id="four">Really,Amazing!!<br>Let's get started.</p>
+	<a href=""><button class="btn btn-default">Next</button></a>
+</div>
+<!--javascript file-->
+<script src="main.js"></script>
+</body>
+</html>
